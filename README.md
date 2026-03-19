@@ -4,6 +4,21 @@ An educational implementation of a miniature GPT language model trained from scr
 
 This project is derived from **DeepLearning.AI's** interactive course materials on JAX, but has been heavily modernized and refactored to comply with the latest standard `flax.nnx` API architecture and `grain.python` data loaders.
 
+## Interactive Gradio Web GUI 🖥️
+We use Gradio to visually modularize the four stages of transformer lifecycle management:
+
+### 1. Data Stage
+![Data Preprocessing](assets/datastage.png)
+
+### 2. Model Specs
+![Architecture Configuration](assets/modelspecs.png)
+
+### 3. Training Loop
+![JIT Training](assets/training.png)
+
+### 4. Text Generator
+![Story Generation](assets/generator.png)
+
 ## What's Inside?
 - `helper.py`: Defines the `MiniGPT` Model architecture, `TransformerBlock`, and `pygrain` dataset loaders.
 - `train.py`: A standalone, JIT-compiled training script equipped with an `optax.warmup_cosine_decay_schedule` and `orbax.checkpoint` serialization.
